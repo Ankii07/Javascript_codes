@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   font-family: sans-serif; 
+}
+
+h1{
+    text-align: center;
+    text-shadow: 7px 4px 7px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+}
+
+.container{
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5rem;
+    max-width: 1200px;
+}
+
+.box{
+    min-height: 200px;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    /* margin-bottom: 1.5rem; */
+    /* max-width: 400px; */
+}
+
+.box-1 {
+    background-color: #BA56F7;
+}
+
+.box-2 {
+    background-color: #FF6161;;
+}
+
+.box-3 {
+    background-color: #505CCA;
+    min-height: 300px;
+}
+
+.box-4 {
+    background-color: #3DAD99;;
+}
+
+.box-5 {
+    background-color: #BE3690;;;
+}
+
+@media (min-width: 720px){
+    .box{
+        min-height: 300px;
+        /* height de doge to span nhi krega */
+    }
+    .container{
+        /* 2 equal columns mai distribute kr do */
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-1, .box-5{
+       grid-column-start: span 2;
+    }
+    .box-3{
+        grid-row-start:span  2;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .container{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}

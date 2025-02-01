@@ -1,0 +1,16 @@
+/* float ka matlab images ke around text hone chahiye */
+/* layouts hai
+flex
+grid  */
+/* by default image inline hoti hai */
+/*kisi bhi element pe float lgane pe wh maximum element ko block
+element bna deti hai */
+
+
+img{
+    width: 200px;
+    float: left;
+    margin-right: 1em;
+}
+
+/* float mai element nhi jsy  */

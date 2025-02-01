@@ -1,0 +1,1 @@
+console.log(user2.age)

@@ -1,0 +1,60 @@
+li{
+    font-weight: 20px;
+}
+/* class selector */
+.html{
+    color: red;
+}
+
+.CSS{
+    color: skyblue;
+}
+
+.Javascript{
+    color:yellow;
+}
+
+.React{
+    color:green;
+}
+
+.Tailwind{
+    color:aqua;
+}
+
+/* id selector */
+#nodejs{
+    color: gray;
+}
+
+/* attribute selector */
+[class]{
+ background-color: aqua;
+}
+
+[anki]{
+    color: hotpink;
+}
+[anki="ankit"]{
+    background-color: aquamarine;
+}
+
+/* selecting with the help of child */
+
+ul p{
+    background-color: blue;
+}
+
+.unordered-list h2{
+    background-color: greenyellow;
+}
+
+/* Pseudo selector */
+
+h1:hover{
+  color:bisque
+}
+
+[anki]:hover {
+    color: orange;
+}

@@ -1,0 +1,19 @@
+#css-image {
+    border: 4px solid green;
+}
+
+[alt="javascript roadmap"] {
+    border: 4px solid hotpink;
+}
+
+p b{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* opacity 0 aur visiblity hidden krne mai yh farak hai ki 
+visiblity hidden krne pe hum uspe click nhi kr skte hai
+pr opacity 0 pe click kr skte hai aur click na kr paye iske liye 
+pointer events ko none krte hai */

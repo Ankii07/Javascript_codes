@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chatrset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 Modules</title>
+    <script src="productData.js" ></script>
+    <!-- agr productData.js ko script.js ke niche likh diya hota to console.log(productData) console mai nhi chalta -->
+    <!-- jaise hi type module krte hai sare variable jo us file mai declared hote hai global scope se hat jate hai aur module scope mai chale jate hai -->
+    <!-- defer lagane se humari script ko request turant chali jati hai lekin execute krna tab start krta hai jb body ki puri execution ho jati hai-->
+    <!-- type = module krne se defer aur use strict automatically lg jata hai yani enable ho jata hai -->
+    <script src="script.js" type="module" ></script>
+  </head>
+  <body style="font-family: cursive">
+    <h1>ES6 Modules</h1>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+body {
+   background-color: #62cb0c12;
+   /* jb hum sirf background set aur bhi sari properties jo ki background se start hoti hai
+   jaise ki background image, background color initial se set ho jati hai isiliye
+   aur agr phle ki background se related koi proprerties set kr rakhi hogi ho to initial 
+   se set ho jayega isiliye aise kabhi nhi krna hai */
+
+   /* backgorund color diya hai to background color property hi set krenge */
+
+   background-color: #62cb0c12;
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   /* font-style: bold; */
+   display: flex;
+   justify-content: center;
+   min-height: 1;
+
+
+}
+
+h1 {
+   margin-left: auto;
+   margin-right: auto;
+   width: 511px;
+   height: 96px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgba(130, 206, 16, 0.741);
+}
+
+#today {
+   display: contents;
+   color: rgba(114, 16, 16, 0.628);
+}
+
+.container {
+   width: 660px;
+   height: 810px;
+   top: 179px;
+   left: 390px;
+   gap: 0px;
+   border-radius: 5px;
+   opacity: 0px;
+   background-color: aliceblue;
+
+}
+
+.box {
+   margin: auto;
+   width: 511px;
+   height: 544px;
+   border-radius: 15px;
+   opacity: 0px;
+   border: 5px solid red;
+
+}
+
+#box-today {
+   margin-left: 10px;
+   margin-top: 20px
+}
+
+.box img {
+   width: 50px;
+   height: 50px;
+}
+
+#corner {
+   display: flex;
+   gap: 10px
+}
+
+#corner span {
+   font-size: 20px;
+   text-decoration-line: underline;
+}
+
+.container p {
+   width: 420px;
+   height: 28px;
+   margin-left:10px;
+   font-weight: lighter;
+
+
+}
+.fruit{
+   border:10px solid red;
+}
+
+progress {
+   margin-left:10px;
+   width: 482px;
+   height: 30px;
+   
+
+}
+
+.button{
+   /* border: 5px solid red; */
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   margin-top: 40px;
+}
+.radio-button{
+   border: 1px solid red;
+   width: 480px;
+   height: 50px;
+   margin:auto;
+   margin-left: 10px;;
+   border-radius:15px;
+   font-weight: lighter;
+   display: flex;
+   align-items: center;
+}
+
+.button p{
+   margin-left: 122px;
+}
+
+#love{
+   margin-top: 49px;
+   margin-left: 160px;
+   font-size: 10px;
+}

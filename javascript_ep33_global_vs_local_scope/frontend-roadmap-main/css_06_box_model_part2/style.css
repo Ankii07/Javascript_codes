@@ -1,0 +1,63 @@
+/* universal selector */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* .parent{
+    background-color: crimson;
+} */
+.anki{
+    background-color: aqua;
+    margin: 0px;
+}
+.one {
+  background-color: aquamarine;
+  width: 400px;
+  /* padding element ke jst pass ek space create kr deti hai */
+  padding: 25px;
+  /* margin-: yh border ke baad wali space hai yh dusre element se duri ke leta hai 
+  margin humare element ke height aur width se farak nhi padta hai
+  margin hum negative bhi de skte hai*/
+  margin: 40px;
+  /* padding ke baad ke space border dekhta hai
+  border ka by default color hota whi jo text ka hota hai jo ki override kiya ja skta hai
+  border aur padding milkr dono element ka width set krti hai*/
+  border: 10px solid teal;
+  border: 4px solid rgb(255, 127, 127);
+  border-radius: 10px;
+  box-sizing: border-box;
+  /*agr hum padding add kr te hai to wh element ke widht mai add aur 
+  width increase ho jati hai element ke lekin 
+  agr hum chahe ke width utna hi rhe jitna dia ho to box-sizing use krte hai  */
+  
+
+
+ }
+
+
+.two {
+    background-color: rgb(130, 238, 213);
+    width: 400px;
+    height: 400px;
+    /* padding: 25px; */
+    border: 8px solid skyblue;
+    /* circle bnane ke liye height aur width honi chahiye aur shape square hona chahiye */
+    border-radius: 100%;
+    margin: 40px;
+    overflow: hidden;
+  }
+
+  .two img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+    border-radius: 100%;
+    /* object-fit: cover; */
+    
+ } 
+
+/* .one-child{
+    /* yh one ka 50% hoga jo ki khud parent ka 50% hai *
+    width: 50%;
+} */

@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+}
+p{
+    background-color: yellow;
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+    /* upto given width the element will be ,not exceed becausebox-sizing  */
+    box-sizing: border-box;
+
+}
+
+.html{
+    background-color: rebeccapurple;
+    /* box model yh khta hai jitne bhi elments hote hai humare page mai wh page ki trah hote hai */
+    width: 300px;
+    /* inline element pe inline elements kaam nhi krte hai 
+    inline elements mai padding aur margin ke top aur bottom walin values kaam nhi krta hai wh left aur right 
+    ka dhyan rkhta hai
+    inline elements mai property inline hi kaam krti hai*/
+    outline: 10px solid red;
+    /* override ho gya inline elements ka property display block krne se */
+    display: inline-block;
+    /* display none se element gayab ho jata hai */
+    display: none;
+}
+
+span{
+    display: inline-block;
+    background-color: yellow;
+    width: 60px;
+    height: 40px;
+    border: 10px solid pink;
+    margin: 20px;
+    padding: 25px;
+    /* img replaced inline tag hota hai jiske wajh se ispe height aur width 
+    kaam kr jaati hai */
+}
+
+/* iframe tag
+isme height width automatically nhi di jati hai
+isme manually dete hai
+yh bhi inline relplaced ka 
+ispe bhi width height aur margin bhi kaam krta hai */

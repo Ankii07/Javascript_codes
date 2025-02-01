@@ -1,0 +1,36 @@
+.parent{
+    width: 200px;
+}
+.one {
+    background-color: red;
+    /* max to max to 500 tk hi hoga jb chota hoga to automaticaly adjust ho jayega
+    horizontal scroll bar nhi aayega */
+    max-width: 500px;
+    /* agr items is height se jada mai ho jayega to overflow ho jayega aur 
+    box se bahr aa jayege isse acha hai max-height property use krle */
+    /* height: 300px; */
+    /* height pixel mai hi kaam krega */
+    max-height: 300px;
+    /* overflow chhupane ke liye */
+    overflow: hidden;
+    min-height: 10px;
+    /* % mai agr width ya height dete hai to humesa wh parent ka utna % rhega
+    size change hoone pe wh automaticaly change hoga 
+    parent ka 200px kaa 50%
+    viewport ka nhi leta*/
+    width: 50%;
+    /* jha se acchha lg rha hai wha se break kr de rha hai box ke bahar overflow
+    nhi hone dega agr text width jada ho gya ho box se
+    not normally used*/
+    word-break: break-all;
+
+ }
+
+.two {
+    background-color: violet;
+  }
+
+.one-child{
+    /* yh one ka 50% hoga jo ki khud parent ka 50% hai */
+    width: 50%;
+}

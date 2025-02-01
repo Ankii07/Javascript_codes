@@ -1,0 +1,111 @@
+body{
+    background-image: linear-gradient(180deg, rgb(120, 120, 168), rgb(0, 60, 255));
+    background-image: url("splash.jpg");
+    /* to set the backround-size we use the background-size property 
+    by default auto hota hai*/
+    /* background-size: auto image ka utna hi size aayega jitna ki box ka size ho  */
+    background-size: auto;
+    /* contain krne se puri image aayegi pr repeatation ke sath
+    repeatation rokne ke liye background-repeat: no repeat kkrna hota hai*/
+    background-size: contain;
+    /* best way to give the backgroud size is cover */
+    background-size: contain;
+    background-position-x: 10px;
+    background-position: -30px -30px;
+    /* agr sirf background: color de doge to baki background property initial set ho jayege */
+}
+main{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(22, 234, 234);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px 6px  rgb(0, 187, 255) ;
+    transform: translate(50%) ;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    
+    /* transform: control space dbaoge to isse se jitni bhi relative property sari dikhne lgegi */
+    /* trasform: scale krne se element ki size bdhi hui dikthi hai jaise ki zoom in ho gyi ho
+    pr uski actual width utni ki utni hi rhti hai isiliye jb scale bdhate hai dusre element kko dhklta nhi uske upr aa jata hai */
+    /* transform: scale(2); */
+    /* scale by default origin se hota hai 
+    iski override krne ke liye transform-orgin: property use krte hai agr bhul jao to search krke dekh lo khuch yaad 
+    krne ki juroort nhi ..transform orgin scaling origin ko shift krne ke liye use krte hai
+    transform mai coma nhi dete hai*/
+    /* transform-origin: 0 0; */
+    /* color mai phla wala slider alpha-channel  ka hota hai */
+    /* rgba mai a hota hai alpha channel aur alpha channel mtlb hota haai ki transparency kitni hai */
+    background-color: rgb(172, 255, 47);
+    background-image: url("splash.jpg");
+    background-size: cover;
+    /* background-image: linear-gradient(
+    to bottom,
+    rgb(255 255 0 / 50%),
+    rgb(0 0 255 / 50%)
+  ), url("splash.jpg"); */
+    /* opacity bhi thori bhut transparency ki trah hoti hai 
+    alpha chanel vary krte ho to sirf color ki hi transparency hogi usmai jo element hai uspe wh transparency apply nhi hogi
+    whi agr opacity apply krte ho to selected item ke sare element pe wh transparency apply hogi*/
+    /* opacity: 0.5; */
+    /* transform: rotate element rotate hoti hai utne angle se aur agr degree - mai to anticlokwise hogi */
+    /* transform: rotate(45deg); */
+    /* translate krne se hum element ki position aage piche kr skte hai(translateX)
+    aur upr niche(translateY) yh krne se baki saath wale element ko push nhi krta whi
+    margin top dene se elment ke actual shift hoga aur aas pas wale element ko push krega */
+    /* translate hum % bhi de skte hai jo ki uske khud ke height se relate krke lega ya width se */
+    /* transform: translateX(100px);
+    transform: translate(50%); */
+
+     /* yha div jiski class box hai uska parent body nhi hai to div ko parent lane ke liye div ko 
+     main tag ke andr rkh denge */
+
+    /* for briging the div to center */
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* ***************************** */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: x-shift y-shift blur-radius spread(charo traf utna pixel add kr dega*/
+    /* order change bhi kr skte hai */
+    box-shadow: 10px 10px 5px 10px  rgba(0, 187, 255,1) ;
+    border-radius: 20px;
+    /* text-shadow
+    phle kaam kr jaye to phir samjhna hai phle istemal phir viswas */
+    text-shadow: 2px 2px rgb(182, 54, 54);
+    /* transistion dene se animation jitna seconds diya hota hai utne se smooth ho jata hai
+    all se sbhi properties to animate ho skti hai sbhi 200ms se ho jayegi jo ki shi hai nhi
+    koi specific value bhi de skte hai iski jgh jaise ki
+    transition: transform 200ms */
+    transition: all 200ms;
+
+
+    
+
+} 
+/* kai baar hover ke waqt random motion hone lgti hai kyuki hover pe click rkhte hai to translate hone lgti hai
+usse hover hat jata hai to phir apne place pe aa jata hai phir use hover milti hai wh phir se translate hone lg jata hai wh loop bn jata hai ek trah se */
+.box:hover{
+    background-color: rgb(68, 13, 68);
+    transform: translate(-50%,-50%) rotate(-30deg) scale(1.5) translate(0); 
+}
+
+/* marquee{
+    height: 200px;
+    font-size: 200px;
+} */
+
+/* h1{
+    /* text property inherited hoti hai parents  */
+    /* text-shadow:x-shift y-shift blur color
+    isme spread nhi hota hai *
+    text-shadow: 2px 2px rgb(95, 54, 182);
+ 
+} */
+
+

@@ -1,0 +1,46 @@
+body{
+    font-family: sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+/*by default staking order jo phle aata hai wh upr rhta hia jo baad mai aata hai wh neeche */
+/* by default z-index ki value auto rhta hai */
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: -100px;
+}
+/* agr kisi elemnt ke pass position hai dusre element ke pass position nhi hai to jiske 
+pass hai wh upr aa jayega
+positon static count na hoga*/
+
+/* by default position ki value static hoti hai
+jb sbhi element ki position set ho to top-bottom order html ke aane ke order
+se define hoga*/
+.red-box {
+    background-color: red;
+    position: relative;
+    /* z-index tbhi kaam krta hai jb element pe koi position property set kr de jaise ki absolute relative */
+    z-index: 10;
+}
+/* visbug extension bhut useful hai developer ke liye*/
+
+/*ek parent hota hai uske andr jo element hote hai usme position ke sath z-inex khuch bhi 
+de dete hai wh parent se bahr nhi ja paata x*/
+.green-box {
+    background-color: green;
+    margin-left: 2rem;
+}
+
+.blue-box {
+    background-color: blue;
+    margin-left: 3rem;
+}

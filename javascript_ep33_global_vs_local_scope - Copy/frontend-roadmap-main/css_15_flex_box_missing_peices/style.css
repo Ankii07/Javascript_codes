@@ -1,0 +1,227 @@
+body{
+    margin:0px;
+}
+*{
+  box-sizing: border-box;
+} 
+.parent {
+    /* padding aur border flex box ke bahr hota hai */
+    /* flex-item ke sbhi ko equal width dene ke liye sare elments kii width 100% kr do
+    jisse ki sbhi element equal percent ghat jayegi */
+    padding: 10px;
+    border: 4px solid indianred;
+    /* display: block
+    display: inline
+    display: inline block
+    display: none
+    display: flex
+    display: grid
+    */
+    display: flex;
+    min-width: 400px; 
+    min-height: 300px;
+    /* justify content center contents ko flex container mai x axis mai center pe rkh deti hai */
+    justify-content: center;
+    /* align item: strech se content ko khte ki flex container ki jitni height hai utni stretch ho jao 
+    by default value hoti hai stretch*/
+    align-items: stretch;
+    /* jitni elements ki height hogi utni hi flex item ki height hogi aur flex container ki top se yani start se  */
+    align-items: flex-start;
+    /* jitni element ki height hai utni botton se yani end se ho jayega */
+    /* align-items: flex-end; */
+   /* jitni bhi space bchi hui ho flex container mai wh equally distribute ho jayege element ke bich mai 
+   yh last wale element ko border se touch krta hai*/
+   justify-content: space-between;
+   /*space around mai elment jo last mai haein unko space milti hai border se jo ki aadha hota hai bich wale space se */
+   justify-content: space-around;
+   /* isme last wale element ko bhi equal space milegi */
+   justify-content: space-evenly ;
+    /* 
+    yh indirect elements pe nhi hoga ..agr span p tag ke andr hoga to wh block mai change nhi hoga
+    yh sirf direct elements pe hoga:: agr kisi pe display: flex property lagaoge to usme ke sare element block ho jayenge
+    inline elements bhi block ho jayenge jaise ki yha pe span element bhi blcok ho jayega 
+    inline elements pe widht aur height apply nhi hota pr kyuki yha span block ho gya hai to width aur height set kr skte hai*/
+
+    /* direct elements hi flex items hote hai sirf */
+
+    /* css ke liye mozilla fire fox jayda bdhiya hai */
+
+    /* padding ko chhor kr flex-box create hota hai */
+
+    /* p tag pe automatically khuch margin hoti hai usko override krne ke liye margin 0 kr do */
+
+    /* agr flex items ko width aur height dete hai aur agr space available hai to aram se fail ke baithega jitna ki uska height width hai
+    agr untna space nhi hai jitna diya hai to to equal rate se sare element ke height width ko adjust krega */
+     /* by default row hota hai */
+    flex-direction: row;
+    /* flex-direction: row reverse; */
+    /* flex direction colomn krne se vertically align ho jayegi */
+    /* flex-direction: column; */
+    /* flex direction column krne se align item aur justify content dusre trah se behave krne lgte hai */
+
+    /*kuch styles jaise ki align item justify content flex-direction  flex-wrap  parent pe apply krte hai */
+
+    /*flex wrap wrap se hum yh kr rhe hai ki agr space utna nhi jitne ki flex item ki acutal space hai to
+    use shrink mt kro use new line mai bhej do  */
+
+    flex-wrap: wrap;
+
+    /*gap property set krke element ke bich mai gap set kr skte hai  */
+    gap: 16px;
+    /* items ke bich mai horizontal gap 10px */
+    row-gap: 10px;
+    /* items ke bich mai vertical gap 5px */
+    column-gap: 5px;
+    /* yh align-item: flex start ki trah behave krta hai */
+    align-items: baseline;
+
+    align-items: last baseline;
+
+    align-items: center;
+     /*align content pure element ko center mai kr dega
+     align content tbhi kaam krga jb multiple lines hogi 
+      align content khuch trah ka justify content ki trah hai yh tbhi krta hai jb humare
+      element pe flex-wrap on hota hai*/
+    align-content: center;
+    align-content: space-around;
+
+}
+
+.parent span{
+    border: 4px solid cadetblue;
+    background-color: cadetblue;
+    /* width: 200px;
+    height: 300px; */
+
+    /* values decimal mai de skte ho */
+    /* flex-shrink: 0.5; */
+
+    /* jb hum flex box mai width nhi dete hai to width wh content size ke jitna le leta hai 
+    flex basis 400px krne se flex box ki width 400px ho jayegi*/
+
+    /* flex basis krne ke baad ydi hum flex-direction column de denge to flex-basis ki value container ke height ke braber ho jayegi
+    aur flex-direction row kr denge to flex-basis width se set ho jayegi aur sari prperty width ke according kaam krne lgegi */
+
+    /*agr height set kr dete ho flex container ki to ager elemnt height se jada hua to overflow ho jayega  */
+    
+    /* flex basis se jada hua agr content to automaticaly set kr lega */
+    flex-basis: 400px;
+    /* margin block 0 dene se margin top bottom apply hota hai */
+    margin-block:0 ;
+    /* margin inline 0 dene se margin left right apply hota hai */
+    margin-inline: 16px;
+}
+/* descednet selector */
+.parent p{
+    border: 4px solid darkkhaki;
+    /* jitna usme mai content hota hai utni width set kr deta hai*/
+    /* width: max-content; */
+
+    /* yh width utna km kr dega jitna kr skta hai genearly utna width lega 
+    jitna ki ek longest word ke width hoga */
+
+    /* width: min-content; */
+    background-color: blueviolet;
+    /* margin: 0px;
+    width: 400px; */
+
+    /* simplest way to center an elment
+    parent ke upr display flex lagao 
+    aur element ke margin auto kr do 
+    aur height*/
+
+    margin-left: auto;
+    /* margin-top: auto; */
+    margin-right: auto;
+    margin-bottom: auto;
+    /* flex grow: property set krne se jitni bhi available space hogi wha tk wh element mai fail jayegi 
+    flex box container */
+
+    /* flex-grow: 1; */
+
+    /* agr sbhi element pe flex-box 1 hai to sare persent element pe equally space ko baat diya jayega */
+    order: 2;
+}
+
+.parent a{
+    /* flex-box mai content size wh hoti hai ki ek line mai jitna content hai utna faila do aur
+    jitna us line ka width hoga wh content size hoo jayegi.. */
+
+    /* flex - box mai element utna hi shrink ho skta hai jitna ki uska min-content ho (yani jinta uske sbse longest word ka width ho) */
+    border: 4px solid yellowgreen;
+    background-color: aqua;
+    /*flex-shrink 0 krne se us element ki width shrink nhi kregi 
+    by default flex-shrink 1 hoti hai */
+    flex-shrink: 0;
+    /* flex-box frogy pe flex box practice kr skte ho */
+
+    /* height % mai tab tk nhi krega jb tk ki uske parent ya parent ke upr bhi ki height pixel ya kisi dusre unit mai na ho mai na di ho */
+
+    /* flex items pe order ke value ko set kiya ja skta hai skta hai jike value jada wh piche hoga left-righ
+    agr order value equal ho to hmtl ke according set hoga */
+    
+    /*order ki value negative mai bhi set kr skte ho  */
+    order: 1;
+    /* flex container mai individual element pe kaam krne wali properties
+     flex-shrink
+     flex-grow
+     order
+     align-self
+     */
+  
+     /*kisi bhi style property ki value ki default value check krni ho to dev tool ke computed mai jao bhi us style
+     ko set kre wha pe search kr lo wh property apne default value ke sath show ho jayega agr  set kr doge to override ho jayegi  */
+     
+     /* jis trah se align item set krne se sare flex items se apply kr skte hai usi 
+     trah se ek indvidual item pe set krne ke liye align self ka use krte hai */
+     align-self: start;
+      
+     align-self: flex-end;
+    
+     align-self: center;
+     /* grid elements pe justify self kaam krta hai */
+     /*  justify self: center; */
+     /* align self center aur margin block auto same  hi trah behave krte hai margin block auto top bottom se equal de deta hai */
+
+     /* don't need to use
+     flex: 100px 2 3
+      flex-grow: 2;
+      flex-shrink: 3;
+      flex-basis: 100px */
+     
+}
+/*.parent class selector hai
+> direct child selector hai 
+* universal child selector
+yha pe yh selector bol rha hai ki parent ki jitni bhi direct child hai use select kr lo
+tage ke andr koi aur tag ho to use select nhi krega  */
+
+/* can i use website btata hai ki hum property wh specfic browser mai use kr skte hai ki nhi   */
+.parent > *{
+   width: 200px;
+   height: 165px;
+    flex-shrink: 0;
+    margin: 0px;
+
+}
+
+/* parent ke sbhi first child ka bhi first child */
+/* agr display flex krne ke baad agr margin-lef auto kr do left se jitni space ho utni le legi 
+by defaul margin top aur bottom auto mai kaa nhi krta hai 
+lekin display flex krne ke baad kaam krne lgta hai*/
+.parent > * + *{
+  margin-left: 0px;
+}
+
+/*jidhar bhi flex direction hota hai udhar hi main axis hota hai
+main axix ke oppsite cross axis hota hai 
+agr main axis horizantal to cross axis vertical ho jayega 
+and vice-versa */
+
+/*display flex krte hai to  parent hai ya flex container hai use block elment bna deti hai
+is cheez ko override krne ke liye aur flex container inline krne ke liye hum
+ek property use kr skte hai 
+display: inline flex;
+baki sari properties of flex kaam kregi*/
+
+/* freecode camp pe practice krlo */

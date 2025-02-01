@@ -1,0 +1,94 @@
+body{
+    margin:0px;
+}
+*{
+  box-sizing: border-box;
+} 
+.parent {
+    /* padding aur border flex box ke bahr hota hai */
+    padding: 10px;
+    border: 4px solid indianred;
+    /* display: block
+    display: inline
+    display: inline block
+    display: none
+    display: flex
+    display: grid
+    */
+    display: flex;
+    width: 400px; 
+    height: 300px;
+    /* justify content center contents ko flex container mai x axis mai center pe rkh deti hai */
+    justify-content: center;
+    /* align item: strech se content ko khte ki flex container ki jitni height hai utni stretch ho jao 
+    by default value hoti hai stretch*/
+    align-items: stretch;
+    /* jitni elements ki height hogi utni hi flex item ki height hogi aur flex container ki top se yani start se  */
+    align-items: flex-start;
+    /* jitni element ki height hai utni botton se yani end se ho jayega */
+    /* align-items: flex-end; */
+   /* jitni bhi space bchi hui ho flex container mai wh equally distribute ho jayege element ke bich mai 
+   yh last wale element ko border se touch krta hai*/
+   justify-content: space-between;
+   /*space around mai elment jo last mai haein unko space milti hai border se jo ki aadha hota hai bich wale space se */
+   justify-content: space-around;
+   /* isme last wale element ko bhi equal space milegi */
+   justify-content: space-evenly ;
+    /* 
+    yh indirect elements pe nhi hoga ..agr span p tag ke andr hoga to wh block mai change nhi hoga
+    yh sirf direct elements pe hoga:: agr kisi pe display: flex property lagaoge to usme ke sare element block ho jayenge
+    inline elements bhi block ho jayenge jaise ki yha pe span element bhi blcok ho jayega 
+    inline elements pe widht aur height apply nhi hota pr kyuki yha span block ho gya hai to width aur height set kr skte hai*/
+    /* direct elements hi flex items hote hai sirf */
+    /* css ke liye mozilla fire fox jayda bdhiya hai */
+    /* padding ko chhor kr flex-box create hota hai */
+
+    /* p tag pe automatically khuch margin hoti hai usko override krne ke liye margin 0 kr do */
+
+    /* agr flex items ko width aur height dete hai aur agr space available hai to aram se fail ke baithega jitna ki uska height width hai
+    agr untna space nhi hai jitna diya hai to to equal rate se sare element ke height width ko adjust krega */
+     /* by default row hota hai */
+    flex-direction: row;
+    flex-direction: row reverse;
+    /* flex direction colomn krne se vertically align ho jayegi */
+    flex-direction: column;
+    /* flex direction column krne se align item aur justify content dusre trah se behave krne lgte hai */
+
+}
+
+.parent span{
+    border: 4px solid cadetblue;
+    background-color: cadetblue;
+    /* width: 200px;
+    height: 300px; */
+    /* values decimal mai de skte ho */
+    /* flex-shrink: 0.5; */
+}
+/* descednet selector */
+.parent p{
+    border: 4px solid darkkhaki;
+    /* jitna usme mai content hota hai utni set kr deta hai*/
+    /* width: max-content; */
+    /* yh width utna km kr dega jitna kr skta hai genearly utna width lega 
+    jitna ki ek longest word ke width hoga */
+    /* width: min-content; */
+    background-color: blueviolet;
+    margin: 0;
+    width: 400px;
+    /* flex grow: property set krne se jitni bhi available space hogi wha tk wh element mai fail jayegi 
+    flex box container */
+    /* flex-grow: 1; */
+    /* agr sbhi element pe flex-box 1 hai to sare persent element pe equally space ko baat diya jayega */
+}
+
+.parent a{
+    /* flex-box mai content size wh hoti hai ki ek line mai jitna content hai utna faila do aur
+    jitna us line ka width hoga wh content size hoo jayegi.. */
+    /* flex - box mai element utna hi shrink ho skta hai jitna ki uska min-content ho (yani jinta uske sbse longest word ka width ho) */
+    border: 4px solid yellowgreen;
+    background-color: aqua;
+    /*flex-shrink 0 krne se us element ki width shrink nhi kregi 
+    by default flex-shrink 1 hoti hai */
+    flex-shrink: 0;
+    /* flex-box frogy pe flex box practice kr skte ho */
+}

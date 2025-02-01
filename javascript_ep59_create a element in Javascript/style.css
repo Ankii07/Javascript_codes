@@ -1,0 +1,35 @@
+
+body{
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+.container {
+    color: green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+h1{
+    font-style: oblique 40deg;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+img {
+    width: 100px;
+    border: solid black;
+    border-radius: 10px ;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: whit;
+}
+
+.image-card{
+    text-align: center;
+}
+
+.image-card p{
+    margin: 0;
+
+}

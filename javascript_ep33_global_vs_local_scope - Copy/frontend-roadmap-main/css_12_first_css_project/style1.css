@@ -1,0 +1,35 @@
+body{
+    background-color: hsl(212, 45%, 89%);
+    /* height dete se min height de agr jada ho jaye elment height se wh khud ko adapt kr lega */
+    min-height: 100vh;
+    /* font fmaily wali property ab sari body elements inherit kr legi
+    font properties inheritable hota hai */
+    /* yh bhi text related property hai to yh bhi inherit kr li jayegi */
+    text-align: center;
+    color: rgb(56,70,89);
+}
+.card{
+    /* to center div
+     */
+    position: fixed;
+    /* margin auto mtlb wh automatically calculate kr rha ki kitna equally distribute kr de
+    space ko left right aut top bottom mai aur equally distribute krne se wh center mai aa gya */
+    margin: auto;
+    padding: 1rem;
+    /* inset 0 dene ka mtlb wh view port ka left right top bottom jitna ho ske utna touch krne ki kosis krega */
+    inset: 0;
+    /* hume width pixel mai nhi deni chahiye width do humesa 100% aur 
+    phir max-width set kr do */
+    width: 302px;
+    height: 470px;
+    border-radius:10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 10px 14px 3px hsl(220, 15%, 55%);
+    /* padding-bottom: rem; */
+
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}

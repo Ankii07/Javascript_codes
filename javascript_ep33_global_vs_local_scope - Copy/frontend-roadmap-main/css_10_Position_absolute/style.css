@@ -1,0 +1,86 @@
+/*Jitni bhi elements pe style lgi hui ho wh devtools mai computed section mai
+showall aur group ko check krne pe dikh jayegi  */
+/* hr ek element ki position static hoti hai by default */
+/* postion hoti: static, realtive, fixed, absolute aur sticky */
+/* style mai ; nhi chhor skte error de dega */
+
+div {
+    /* position relative krne se ek extra space postion 0px ki aa jati hai margin ke upr */
+    /*web-kit likhti hai cross browser compatability ke liye yaani kuch khuch browser mai koi specific
+    property kaam nhi krti to use web-kit lgakr uske aage wh property likhti hai */
+    position: relative;
+    /* position relative se hum apne ass paas ke elment se lete hai */
+    /* position relative krne ke baad humare pass 4 options hote hai jisko set krne ke baad
+     hum humare element ke position set kr skte hai
+     top
+     right
+     bottom 
+     left */
+    top: 10px;
+    /* bottom se 10 px */
+    bottom: 10px;
+    /* yha pe left se bhi l0 px dena hai aur right se bhi 10 px dena hai to conflict ho 
+     gya de to de kya to yha pe browser decide krta hai aur left diya gya hai */
+    left: 10px;
+    right: 10px;
+    /* top 10 px yani yh to se 10 px niche aa gya 
+     yhi top -10 px de to yh to top se 10px upr chla jayega
+     yh margin ki baad ki space hai
+     kyuki div top se 10 px niche aaya hai to yh automaticly apne bottom se -10 px ho gya hai
+     jo ki override ho jayegi agr hum bottom ko koi pixel de de */
+    background-color: greenyellow;
+    /* agr charo side ko ek hi value deni ho to inset use krke de skte hai  */
+    inset:5px;
+    /* top bottom left right static mai kaam nhi krti aur baki mai krti hai
+    position: inherit likhne se wh parent ke position property inherit kr legi
+    position: unset likhne mai position ke default value mai ho jayegi jo ki static hoti hai */
+    
+
+}
+ul{
+    background-color: rgb(31, 31, 123);
+  position:relative; 
+  height: 300px; 
+  overflow: scroll;
+  margin-top: -100px;
+}
+.css-element{
+    /* position absolute kr ne se pure viewport ke relaive se leta hai */
+    /* agr jis element mai humne postion absolute kra hai uske parent ka positon static ke alawa khuch bhi hai to
+    is element ke position viewport ke relative nhi blki uske parent ke relative behave kregi  */
+    /* agr is element ke grandparent ka position static ke alawa khuch ho to elment jiski position absolute hai wh apne grandparent se relate ho jayega
+    jha bhi usko position relative milegi wha attach ho jayega */
+    background-color: aquamarine;
+    /* position absolute krne se element whi rhta hai lekin yh bakiyo ko bta deta hai ki mai
+    wha pe hu hi nhi jo wh space liya rhta hai chorr deta hai
+    aur element ki width utni hi ho jati hai jitna element ka width hota hai */
+    position: absolute;
+    /* jaisa ki hum dekh rhe the agr hum position relative krke left aur right ya top aur bottom ko same px de rhe
+    the to koi ek override ho ja rhi thi pr agr
+    hum position absolute krke same pixel de to override nhi blki stretch ho jayegi dono tadap */
+    top: 50px;
+}
+
+.js-element{
+    /* position fixed bhi absolute ki trah hi behave kdta hai pr yh humesa viewport ke relative hi rhega  */
+    position: fixed;
+    /*agr display none kr de to element ek trah se delete ki trah ho jayega wha pe dikhega nhi gayab ho jayega 
+    display: none*/
+    top: 10px;
+    right: 20px;
+    inset: 10px;
+}
+/* position sticky relative ki trah hi behave krta hai yh dono documentation ke 
+flow se bahr nhi niklta pr
+position fixed aur absolute documents ke flow ke bahar nikl jata hai */
+
+.html-element{
+    background-color: rgb(64, 0, 255);
+    /* positon sticky dene ke baad hum use elment ko parent ke bahar nhi nikal skte hai wh humes parent ke andr hi rhega */
+    /* sticky element ko move krne ke liye parent ke anadr ..parent ke pass ek property honi chahhiye
+    overflow: scroll jo overflow x ya overflow y bhi ho skta ha */
+    /*position sticky element humesa apne parent ke saath hi chlega wh apne parent ke bahar kbhi ja hi nhi skta */
+    /* agr parent ke overflow na ho to position sticky viewport ke relative kaam krga tbhi tk jb tk wh parent ke andr hai */
+    /* position:sricky generally navigation bnane ke liyye use hota hai */
+   position:sticky; 
+}

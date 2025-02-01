@@ -1,0 +1,8 @@
+body{
+    color:green;
+    font-family: inherit;
+}
+/* inheritance:- property of body is applied to its children
+text se related property inherited hoti hai
+khuch properties hoti hai jo inherit nhi hoti hai */
+

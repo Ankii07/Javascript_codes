@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Nunito,sans-serif;
+}
+
+main{
+    /* top left bottom right sb traf se padding ho jayegi */
+    padding: 24px;
+}
+
+/* responsive ke liye rem unit use kr lo.. */
+.header-container{
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.2);
+    padding-inline: 24px;
+
+}
+
+.header-cotent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+    
+    /* background-color: pink; */
+}
+
+.title{
+    font-weight: 800;
+}
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+.countries-container{
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 10px;
+    display: flex;
+    gap:px64;
+    flex-wrap: wrap;
+    /* dono corner se aligned rhega aur bich ke gap ko automatically adjusted hoti rhegi */
+    justify-content: space-between;
+}
+
+.country-card{
+    display: inline-block;
+    margin-top:50px;
+    width: 250px;
+    border-radius: 4px;
+    padding-bottom: 24px;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+    /* jis property ki transition smooth bnani ho us property ke liye transition property use krna hota hai*/
+    transition: transform 0.2s ease-in-out;
+}
+.country-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+    font-size: 24px;
+    /* margin-block yani margin top- bottom */
+    /* margin-block: 16px; */
+}
+
+.card-text{
+    padding-inline: 16px;
+
+}
+
+.card-text p{
+    margin-block: 8px; 
+}
+.country-card img{
+   width: 100%; 
+   
+}
+

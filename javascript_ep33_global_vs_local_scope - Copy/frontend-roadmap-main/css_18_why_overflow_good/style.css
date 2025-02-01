@@ -1,0 +1,12 @@
+body{
+    font-family: sans-serif;
+/* overflow hidden krne se jo overflow  chup jayega scroll bar nhi aayega ki aap use scroll
+krke dekh sko */
+/* overflow: scroll bhi kr skte hai jisse ki us parent mai hi scroll aa skta hai */
+}
+/*koi text ka minimum  length  uske longest word ke brabar ka hota hai */
+/* overflow tb hota hai jub parent ke andr ka element parent ke width se bra ho jata hai */
+.box{
+    font-size: 4rem;
+    border: 4px solid;
+}

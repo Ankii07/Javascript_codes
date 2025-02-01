@@ -1,0 +1,41 @@
+/* html tag ko select krne ka dusra trika hai */
+:root{
+    font-size: 16px;
+}
+
+
+html{
+    height: 100px;
+    font-size: 2em;
+}
+body{
+    /* margin aur padding kbhi bhi % mai nhi dena hai */
+    margin:0px;
+}
+.box{
+    background-color: rgb(14, 243, 14);
+   
+    /* em font-size se relatble hoti hai */
+   /* font-size em mai de to parent ke font size=1 em ho jayega sirf usi time  */
+    font-size: 2em;
+    /* width margin padding aur kuch deto to us elment mai jitni font size hai wh 1 em hogi */
+    padding: 1em;
+    margin: 2em;
+    /* 1 rem= 16px hota hai by default*/
+    /* rem parent ka font-size nhi dekhta hai set krte time. */
+    /* rem dekhta hai root ka font-size yani html ka font-size*/
+}
+
+#honey{
+    background-color: yellowgreen;
+    /* 50 vw :- viewpart width ka mtlb hai jitna humara veiw port ka width hai uska aadha jo ki genearly browser ka widht hota hai*/
+    width: 50vw;
+   
+    width: 50vh;
+    padding: 10vw;
+    margin: 19vh;
+    /* min or max font-size hi use hote hai generally */
+    font-size: 10vw;
+    border: 10vw solid red;
+
+}

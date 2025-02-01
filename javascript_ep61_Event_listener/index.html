@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Event Listeners</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body style="font-family: cursive;">
+    <!-- yh pe onclick wale line mai different quotes use krna jurrori hai agr same use kr liya to error aayega
+    isiliye "" yh use hua hai aur uske andr '' yh quote use hua hai -->
+    <h1 onclick="console.log('Heading Clicked')">Adding Event Listeners</h1> 
+     <!-- behind the scenes he1 ki jo propertie hai onclick wh set ho gya hai is function aur jo sare evenproperties 
+    h1 ke null se set hai jo onclick event call hui hai whi sirf us called function se set hai -->
+
+    <div onclick="sayHi()" class="container">
+
+      <!-- <div ondblclick="console.log('double click hone pe triggered hoga')" class="card">1</div> -->
+      <div class="new-card add-card"  title="Add New Card">+</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(72,163,0,0.07);
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+}
+main{
+    padding: 0 16px 32px; 
+}
+
+.title {
+    font-size: 64px;
+    color: #48A300;
+    text-align: center;
+}
+
+.title span{
+    color: #61481C
+}
+
+.app-container{
+    background-color: #FBFBFB;
+    max-width: 660px;
+    margin-inline: auto;
+    border-radius: 15px;
+    padding: 32px 48px; 
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1) 
+}
+
+/* .subtitle {
+    
+} */
+
+.sun-icon {
+    /* it is the image property to align the image in the middle */
+    vertical-align: middle;
+    margin-left: 16px
+}
+
+.progress-label{
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 18px;
+}
+
+.progress-bar{
+    height: 30px;
+    background-color: rgba(72, 163,0, 0.1);
+    border-radius: 15px;
+    position: relative;
+}
+
+.progress-value{
+    height: 100%;
+    background-color:  #48A300;
+    border-radius: 15px;
+    /* width: 0; */
+    font-weight: 500;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    transition: width 1s ease-in-out; 
+}
+.progress-value span {
+    padding-left: 20px;
+    min-width: max-content;
+  }
+.error-label{
+    font-size: 14px;
+    color: #FF5151;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    top: 17px;
+    display: none;
+}
+
+.show-error .error-label{
+    display: block;
+}
+.goal-container {
+    border: 1px solid rgba(0,0,0, 0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0px 22px;
+    /* gap: 22px; */
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 46px;
+}
+
+.custom-checkbox{
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    border-radius: 50%;
+    /* align-self: center; */
+    /* vertical-align: middle; */
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.goal-input{
+    border:none;
+    outline: none;
+    padding-left: 22px;
+    font-family: inherit;
+    font-size: 16px;
+    /* background-color: #d9d9d9; */
+    /* flex-grow: 1; */
+    align-self: stretch;
+    width: 100%;
+    font-weight: 500;
+
+}
+
+.goal-input ::placeholder{
+    color: #d9d9d9;
+}
+
+.quote{
+    font-weight: 500;
+    text-align: center;
+}
+
+.made-by{
+    font-weight: 500;
+    font-size: 10px;
+    text-align: center;
+    color: #858585;
+    margin-top: 32px;
+}
+/* div mai jb bhi hum khuch likh ke rakhte hai to uska font weight 400 rhta hai */
+
+.completed .custom-checkbox{
+    background-color: #48A300;
+    border: #306802;
+}
+
+.check-icon{
+    display: block;
+}
+
+.completed .goal-input{
+    color:#68d70d;
+    text-decoration-line: line-through;
+}
+
+@media(max-width: 768px){
+    title{
+        font-size: 32px;
+
+    }
+
+    .app-container{
+        padding: 16px 32px;
+    }
+
+    .goal-container{
+        height: 64px;
+        margin-bottom: 24px;
+        border-radius: 12px;
+    }
+    .custom-checkbox{
+        height: 20px;
+        width: 20px;
+    }
+}

@@ -1,0 +1,47 @@
+/*media are generally two types:- 
+ * print
+ *screen
+
+ */
+
+.square{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 25px solid blue;
+    /* yh property dene se background color humesa print hogi by default
+    print mai background color option disable hone ke bawjood bhi */
+    print-color-adjust: exact;
+    /*is prpoperty ko chrome krwane ke liyye bs webkit add kr do */
+    -webkit-print-color-adjust: exact;
+}
+/* printing ke samay ki property change  krne ke liye 
+koi bhi propety change kr skte hai*/
+/* @media print{
+    .square{
+        border: 25px solid yellow;
+    }
+}
+@media screen{
+}
+
+@media all{
+}
+
+*/
+
+/* by default @media ki value all hoti hai */
+/* media features ko humesa parenthesis mai likhte hai */
+/* width ko iss formate mai bhi rkh skte hai
+@media (500px <= width <=700px)
+@media (max-width: 700px) bhut jada browser mai supported hai
+@media (min-width: 700px) yh style apply hone ke liye minimum 700px honi chahiye
+@media (max-height: 700px) bhut jada browser mai supported hai
+@media (min-heght: 500px)
+@media print and (min-width: 800px)*/
+
+@media (orientation: portrait) and (width > 700px) {
+    .square{
+        border: 25px solid yellow;
+    }
+}

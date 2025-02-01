@@ -1,0 +1,30 @@
+
+/* more specfity thean every selecotrs out here it got added class + id +li*/
+li#html.html{
+    background-color: red;
+}
+/* way to increase specifity */
+#html#html#html#html#html{
+    background-color:coral;
+}
+#html{
+    background-color:yellow;
+}
+
+.html{
+    background-color:cornflowerblue;
+}
+
+li{
+    background-color: green;
+}
+/* cascading means importance of styling increases from top to bottom
+first background color got overide */
+li{
+    background-color: orange;
+}
+
+
+/* specificity:- priority ranking value of styling 
+id > class > attribue
+if specifity is same then the importance is more to the selector which is lower is applied(cascade)*/

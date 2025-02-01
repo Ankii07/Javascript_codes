@@ -1,0 +1,52 @@
+html{
+    height: 100px;
+}
+body{
+    /* margin aur padding kbhi bhi % mai nhi dena hai */
+    margin:0px;
+}
+.box{
+    background-color: rgb(14, 243, 14);
+    /* agr hum pixel mai width dete hai to agr browser given width se chota 
+    ho jaye to scroll bar aa jata hai
+    normally width pixel mai nhi dete hai
+    max-width dete hai generaly*/
+
+    /* ctrl+ space se relatble options dikhne lagne lgte hai
+    % parent se relatable hota hai 
+    agr parent ka width 100px ka hai to yh 50% lega to humesa parent ka aadha rhegaa
+    height % mai kaam nhi krta hai
+    agr height ko % mai dena hai to uske parent ko height ki pixel mai dena hoga */
+    padding: 20%;
+    margin: 10%;
+    /*font-size mai % mai parent ke width se nhi blki parent ke font size se le rha hai
+      browser automatically deti hai font-size 1em=16px jo ki computer dev tool mai jakr 
+      show all option krke dekh skte hai
+      agr hieght % mai de to wh parent ke heigh se relate hoti hai
+      agr font-size % mai de to wh parent ke font-size se relate krti hai
+      aur width paddin aur margin parent ke width se relate krti hai*/
+      /* font-size % mai 6px se km mai nhi jata hai  */
+    font-size: 200%;
+    /*  box -sizing: border-box dene se element ki width utni hi rhegi padding add 
+    krne ke baad bhi wh subtract ho jayegin inner content ke width se
+    aise normally padding agr dete hai to wh add ho jata hai elment ke bowidth mai*/
+    /*  border: 10% solid red
+    border aur height % mai kamm nhi krte hai
+    border ke saath 99% time px hi use krte hai*/
+}
+
+#honey{
+    background-color: yellowgreen;
+    /* 50 vw :- viewpart width ka mtlb hai jitna humara veiw port ka width hai uska aadha jo ki genearly browser ka widht hota hai*/
+    width: 50vw;
+    /* vh= viewport hight */
+    /* 50 vh :- jitna humare viewprt ka hight ho uska 50% ho  */
+    /* vw or vh mai border kaam krta hai */
+    width: 50vh;
+    padding: 10vw;
+    margin: 19vh;
+    /* min or max font-size hi use hote hai generally */
+    font-size: 10vw;
+    border: 10vw solid red;
+
+}

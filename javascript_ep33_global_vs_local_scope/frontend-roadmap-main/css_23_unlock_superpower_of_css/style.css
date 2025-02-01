@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background-color: lightblue;
+    display: grid;
+    /*by default value row hoti hai iska matlb by default row create krni hai  */
+    /* grid-auto-flow: row; */
+    /* grid-auto-flow: column; */
+    /* columns yha char hai jo humne specify kia hai pr row automatically create ho 
+    ja rha hai according to elements */
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(6,100px);
+    /*jaise jaise 100px space aati rhegi waise waise column bnta rhega */
+    grid-template-columns: repeat(auto-fill,100px);
+    /*size automatically set hoti rhegi min 80px ka max 1fr*/
+    grid-template-columns: repeat(5,minmax(80px,1fr));
+    /*shortcut  */
+     grid-template: repeat(4,100px)/repeat(6,100px);
+     /* shortcut for grid:auto flow/ 1fr 1fr 1fr */
+    /* grid-auto-flow: row dense krne se elment ko start krne se dusre columm se ya row se
+    jo elment automatically push ho rhi thi element aage nhi hogi wh piche ke cell mai aa jayegi automatically */
+    /*jo row ya column automatically create ho rha hai uski ewidth random hoti hai */
+    /* agr aap chahte ho jo element created ho uski width bhi fixed ho to uske
+    liye property hai grid-auto-column: 100px */
+    grid-auto-columns: 100px;
+    /* automatically created row ki size ko fixed krne ke liye use krte hai grid-auto-row property */
+    grid-auto-rows: 100px;
+    /* jis trah hum flex items pe property set kr rhe the usi trah grid items pe bhi
+    property set kr skte hai  
+    align-items: center krne se sare individual grid elements center ho jayenge;
+    pr sare grid elements ho cell mai center krne ke liye justify-content: center nhi denge thora 
+    alg behave krta hai isiliye jsutify-items:center dete hai*/
+    /* align-items: center; */
+    /* align-item; normal , stretch ki trah hi hota hai */
+    /* justify content center pure grid ko container yani parent ke center mai kr dega */
+    /* justify-content:center; */
+    /* justify-items: center; */
+    /* align-items: flex-end; */
+    /* justify-items:flex-end; */
+
+    /*css grid attack game pe practice kr skte ho */
+
+
+  }
+  
+  .box {
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  
+  .box-1 {
+    background-color: green;
+    /* 3 number wale line se start hoga aur bakio ko push kr dega piche */
+    grid-column-start: 3;
+    /* agr jitne colums hai present hai usse jada column mai span krne ke liye bol
+    dete ho wh column ya row automatically aa jayega  */
+    grid-column: 3/6;
+    /* is trah ki grid-row: 2/5 hai */
+  }
+  
+  .box-2 {
+    background-color: blueviolet;
+  }
+  
+  .box-3 {
+    background-color: blue;
+  }
+  
+  .box-4 {
+    background-color: brown;
+  }
+  
+  .box-5 {
+    background-color: coral;
+   
+  }
+  
+  .box-6 {
+    background-color: darkblue;
+    /* ek individual element pe proprties set krne ke liye self ka use krenge */
+    align-self: stretch;
+    justify-self: stretch;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-inline: auto;
+    margin-block:10px;
+  }
+  
+  .box-7 {
+    background-color: darkred;
+  }
+  
+  .box-8 {
+    background-color: darkslategray;
+  }
+  
+  .box-9 {
+    background-color: gray;
+  }
+  
+  .box-10 {
+    background-color: navy;
+  }
